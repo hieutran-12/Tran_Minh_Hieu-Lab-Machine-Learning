@@ -1,0 +1,123 @@
+{
+  "dataset": "digits",
+  "n_train": 1437,
+  "n_test": 360,
+  "baseline_va_chuan_hoa": {
+    "logistic_regression": {
+      "accuracy": 0.8666666666666667,
+      "time_s": 0.03259778022766113
+    },
+    "mlp_khong_chuan_hoa": {
+      "accuracy": 0.9666666666666667,
+      "time_s": 0.6524782180786133,
+      "n_iter": 29
+    },
+    "mlp_co_chuan_hoa": {
+      "accuracy": 0.9055555555555556,
+      "time_s": 1.611203908920288,
+      "n_iter": 66
+    }
+  },
+  "so_sanh_kien_truc": [
+    {
+      "architecture": "(64,)",
+      "n_params": 4810,
+      "accuracy": 0.7694,
+      "train_time_s": 0.13,
+      "n_iter": 31
+    },
+    {
+      "architecture": "(128,)",
+      "n_params": 9610,
+      "accuracy": 0.8972,
+      "train_time_s": 1.41,
+      "n_iter": 100
+    },
+    {
+      "architecture": "(128, 64)",
+      "n_params": 17226,
+      "accuracy": 0.9056,
+      "train_time_s": 3.75,
+      "n_iter": 66
+    },
+    {
+      "architecture": "(256, 128, 64)",
+      "n_params": 58442,
+      "accuracy": 0.9639,
+      "train_time_s": 4.02,
+      "n_iter": 78
+    }
+  ],
+  "so_sanh_activation": [
+    {
+      "activation": "relu",
+      "accuracy": 0.9056,
+      "n_iter": 66,
+      "train_time_s": 1.35
+    },
+    {
+      "activation": "tanh",
+      "accuracy": 0.9444,
+      "n_iter": 59,
+      "train_time_s": 1.15
+    },
+    {
+      "activation": "logistic",
+      "accuracy": 0.1,
+      "n_iter": 14,
+      "train_time_s": 0.56
+    }
+  ],
+  "so_sanh_learning_rate": [
+    {
+      "learning_rate": 0.01,
+      "accuracy": 0.9639,
+      "n_iter": 43
+    },
+    {
+      "learning_rate": 0.001,
+      "accuracy": 0.9056,
+      "n_iter": 66
+    },
+    {
+      "learning_rate": 0.0001,
+      "accuracy": 0.0972,
+      "n_iter": 12
+    }
+  ],
+  "top_cap_nham_lan": [
+    {
+      "that": 8,
+      "du_doan": 1,
+      "so_luong": 4
+    },
+    {
+      "that": 1,
+      "du_doan": 8,
+      "so_luong": 4
+    },
+    {
+      "that": 1,
+      "du_doan": 6,
+      "so_luong": 3
+    },
+    {
+      "that": 9,
+      "du_doan": 8,
+      "so_luong": 2
+    },
+    {
+      "that": 9,
+      "du_doan": 4,
+      "so_luong": 2
+    }
+  ],
+  "human_in_the_loop_99": {
+    "threshold": 0.99,
+    "pct_tu_dong": 9.72,
+    "pct_chuyen_nguoi": 90.28,
+    "accuracy_tren_phan_tu_dong": 1.0,
+    "accuracy_tong_the_khong_loc": 0.9056
+  },
+  "final_accuracy_128_64": 0.9056
+}
