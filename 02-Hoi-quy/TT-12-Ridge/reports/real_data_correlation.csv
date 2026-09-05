@@ -1,0 +1,4 @@
+,TV,Radio,Newspaper
+TV,1.0,0.055,0.057
+Radio,0.055,1.0,0.354
+Newspaper,0.057,0.354,1.0

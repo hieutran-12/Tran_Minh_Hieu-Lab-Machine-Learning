@@ -1,0 +1,16 @@
+{
+  "best_alpha_ridgecv": 0.001,
+  "linear_rmse_test": 47.945725258364185,
+  "ridge_rmse_test": 47.945766345621905,
+  "vif_max": 26.44,
+  "ridge_coefficients": {
+    "TV": 406.90245771296037,
+    "Facebook": 141.00529727674154,
+    "Google": 206.73971280310732
+  },
+  "budget_allocation_percent": {
+    "TV": 53.9,
+    "Facebook": 18.7,
+    "Google": 27.4
+  }
+}
