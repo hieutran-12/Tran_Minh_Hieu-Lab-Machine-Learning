@@ -1,0 +1,55 @@
+{
+  "alpha_toi_uu": 7.92483,
+  "so_bien_giu_lasso": 5,
+  "bien_that_giu": [
+    "bmi",
+    "bp",
+    "s3",
+    "s5"
+  ],
+  "bien_that_bo": [
+    "age",
+    "s1",
+    "s2",
+    "s4",
+    "s6",
+    "sex"
+  ],
+  "so_luong_nhieu_giu_nham": 1,
+  "nhieu_giu_nham": [
+    "chi_so_nhieu_009"
+  ],
+  "rmse": {
+    "linear_baseline_train": 33.99,
+    "linear_baseline_test": 84.78,
+    "ridge_train": 46.77,
+    "ridge_test": 58.05,
+    "lasso_train": 56.28,
+    "lasso_test": 53.73,
+    "debiased_lasso_train": 54.56,
+    "debiased_lasso_test": 53.74
+  },
+  "so_bien_giu_ridge": 200,
+  "thi_nghiem_tuong_quan": {
+    "1": {
+      "bmi": 22.129,
+      "bmi_ban_sao": 0.0
+    },
+    "2": {
+      "bmi": 27.0202,
+      "bmi_ban_sao": 0.0
+    },
+    "3": {
+      "bmi": 24.0876,
+      "bmi_ban_sao": -0.0
+    },
+    "42": {
+      "bmi": 27.4092,
+      "bmi_ban_sao": 0.0
+    },
+    "99": {
+      "bmi": 20.6066,
+      "bmi_ban_sao": 0.0
+    }
+  }
+}

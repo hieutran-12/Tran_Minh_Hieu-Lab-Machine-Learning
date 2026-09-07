@@ -1,0 +1,5 @@
+Chỉ số,Giá trị
+Tổng số biến giữ lại,5/200
+Biến thật giữ đúng (recall),4/10
+Biến thật bị bỏ sót,6/10
+Biến nhiễu giữ nhầm (false positive),1/190

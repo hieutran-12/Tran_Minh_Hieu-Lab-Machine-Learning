@@ -1,0 +1,4 @@
+Mô hình,Số biến giữ lại,RMSE train,RMSE test
+"Linear (baseline, 200 biến)",200,33.99,84.78
+Ridge (L2),200,46.77,58.05
+Lasso (L1),5,56.28,53.73
