@@ -1,0 +1,11 @@
+target,model,n_features_kept,RMSE,R2
+Y1_heating,Dummy,0,10.238,-0.0055
+Y1_heating,LinearRegression,14,2.872,0.9208
+Y1_heating,Ridge,14,2.886,0.9201
+Y1_heating,Lasso,12,2.899,0.9194
+Y1_heating,ElasticNetCV,14,2.876,0.9207
+Y2_cooling,Dummy,0,9.666,-0.0084
+Y2_cooling,LinearRegression,14,3.12,0.895
+Y2_cooling,Ridge,14,3.128,0.8944
+Y2_cooling,Lasso,13,3.135,0.8939
+Y2_cooling,ElasticNetCV,14,3.121,0.8949
