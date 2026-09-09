@@ -1,0 +1,22 @@
+TT-15 — KẾT QUẢ TÓM TẮT
+==================================================
+Baseline (bậc 1): RMSE train=4.589, test=4.428
+Bậc tối ưu (CV, Ridge): 3
+Model cuối (bậc 3, Ridge): RMSE test=4.100 MW, R2=0.9413
+Random Forest: RMSE test=3.175 MW, R2=0.9648
+
+Bảng bậc | số cột | RMSE:
+ degree  n_cols  rmse_train_linear  rmse_test_linear  rmse_train_ridge  rmse_test_ridge
+      1       4             4.5894            4.4281            4.5894           4.4281
+      2      14             4.2821            4.1471            4.3280           4.1725
+      3      34             4.1783            4.0399            4.2674           4.0995
+      4      69             4.1049            4.0020            4.2275           4.0725
+      5     125             3.9893            3.9156            4.2078           4.0604
+      6     209             3.9260            3.9479            4.1903           4.0470
+      7     329             3.8403            3.9730            4.1749           4.0334
+      8     494             3.7795            4.7080            4.1606           4.0194
+
+Ngoại suy AT=50°C (ngoài dải dữ liệu, PE thực tế chỉ trong 420-496 MW):
+  Bậc 3 (final, Ridge): trong dải 436.96 MW -> ngoại suy 434.43 MW (lệch -2.53)
+  Bậc 8 + Ridge: trong dải 436.40 MW -> ngoại suy 398.33 MW (lệch -38.08)
+  Bậc 8 + Linear thuần: trong dải 437.83 MW -> ngoại suy 61506.77 MW (lệch +61068.94)
