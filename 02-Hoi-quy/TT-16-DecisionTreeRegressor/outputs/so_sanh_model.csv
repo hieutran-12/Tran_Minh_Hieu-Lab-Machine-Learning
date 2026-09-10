@@ -1,0 +1,4 @@
+model,MAE,MAPE_%,RMSE
+"DecisionTreeRegressor (depth=5, tra bảng được)",1.947,15.842,2.591
+"RandomForestRegressor (200 cây, depth=10)",1.591,12.586,2.172
+LinearRegression,1.874,13.807,2.862

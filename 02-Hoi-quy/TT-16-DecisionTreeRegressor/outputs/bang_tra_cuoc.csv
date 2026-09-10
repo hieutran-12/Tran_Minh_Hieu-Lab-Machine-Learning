@@ -1,0 +1,30 @@
+ma_muc_gia,dieu_kien,gia_du_doan_usd,so_chuyen_trong_du_lieu_train
+G01,trip_distance <= 9.28 VÀ trip_distance <= 3.70 VÀ trip_distance <= 2.15 VÀ zone_Manhattan <= 0.50 VÀ is_rush <= 0.50,7.15,18251
+G02,trip_distance <= 9.28 VÀ trip_distance <= 3.70 VÀ trip_distance <= 2.15 VÀ zone_Manhattan <= 0.50 VÀ is_rush > 0.50,9.51,12956
+G03,trip_distance <= 9.28 VÀ trip_distance <= 3.70 VÀ trip_distance <= 2.15 VÀ zone_Manhattan > 0.50 VÀ is_rush <= 0.50,9.87,16054
+G04,trip_distance <= 9.28 VÀ trip_distance <= 3.70 VÀ trip_distance > 2.15 VÀ zone_Manhattan <= 0.50 VÀ is_rush <= 0.50,11.1,14066
+G05,trip_distance <= 9.28 VÀ trip_distance <= 3.70 VÀ trip_distance <= 2.15 VÀ zone_Manhattan > 0.50 VÀ is_rush > 0.50,12.23,11052
+G06,trip_distance <= 9.28 VÀ trip_distance <= 3.70 VÀ trip_distance > 2.15 VÀ zone_Manhattan <= 0.50 VÀ is_rush > 0.50,13.4,9697
+G07,trip_distance <= 9.28 VÀ trip_distance <= 3.70 VÀ trip_distance > 2.15 VÀ zone_Manhattan > 0.50 VÀ is_rush <= 0.50,13.81,12099
+G08,trip_distance <= 9.28 VÀ trip_distance > 3.70 VÀ trip_distance <= 5.91 VÀ trip_distance <= 4.68 VÀ zone_Manhattan <= 0.50,15.79,8067
+G09,trip_distance <= 9.28 VÀ trip_distance <= 3.70 VÀ trip_distance > 2.15 VÀ zone_Manhattan > 0.50 VÀ is_rush > 0.50,16.19,8400
+G10,trip_distance <= 9.28 VÀ trip_distance > 3.70 VÀ trip_distance <= 5.91 VÀ trip_distance <= 4.68 VÀ zone_Manhattan > 0.50,18.52,6699
+G11,trip_distance <= 9.28 VÀ trip_distance > 3.70 VÀ trip_distance <= 5.91 VÀ trip_distance > 4.68 VÀ zone_Manhattan <= 0.50,18.73,5368
+G12,trip_distance <= 9.28 VÀ trip_distance > 3.70 VÀ trip_distance <= 5.91 VÀ trip_distance > 4.68 VÀ zone_Manhattan > 0.50,21.49,4700
+G13,trip_distance <= 9.28 VÀ trip_distance > 3.70 VÀ trip_distance > 5.91 VÀ trip_distance <= 7.52 VÀ zone_Manhattan <= 0.50,22.68,3412
+G14,trip_distance <= 9.28 VÀ trip_distance > 3.70 VÀ trip_distance > 5.91 VÀ trip_distance <= 7.52 VÀ zone_Manhattan > 0.50,25.37,3055
+G15,trip_distance <= 9.28 VÀ trip_distance > 3.70 VÀ trip_distance > 5.91 VÀ trip_distance > 7.52 VÀ trip_distance <= 8.66,28.05,2368
+G16,trip_distance > 9.28 VÀ zone_JFK Airport <= 0.50 VÀ trip_distance <= 15.10 VÀ trip_distance <= 12.24 VÀ trip_distance <= 10.68,33.0,1499
+G17,trip_distance <= 9.28 VÀ trip_distance > 3.70 VÀ trip_distance > 5.91 VÀ trip_distance > 7.52 VÀ trip_distance > 8.66,33.19,894
+G18,trip_distance > 9.28 VÀ zone_JFK Airport <= 0.50 VÀ trip_distance <= 15.10 VÀ trip_distance <= 12.24 VÀ trip_distance > 10.68,36.77,1544
+G19,trip_distance > 9.28 VÀ zone_JFK Airport <= 0.50 VÀ trip_distance <= 15.10 VÀ trip_distance > 12.24 VÀ trip_distance <= 13.57,40.54,1183
+G20,trip_distance > 9.28 VÀ zone_JFK Airport <= 0.50 VÀ trip_distance <= 15.10 VÀ trip_distance > 12.24 VÀ trip_distance > 13.57,44.33,1355
+G21,trip_distance > 9.28 VÀ zone_JFK Airport <= 0.50 VÀ trip_distance > 15.10 VÀ trip_distance <= 19.71 VÀ trip_distance <= 17.13,49.3,1642
+G22,trip_distance > 9.28 VÀ zone_JFK Airport <= 0.50 VÀ trip_distance > 15.10 VÀ trip_distance <= 19.71 VÀ trip_distance > 17.13,55.17,1170
+G23,trip_distance > 9.28 VÀ zone_JFK Airport <= 0.50 VÀ trip_distance > 15.10 VÀ trip_distance > 19.71,66.75,516
+G24,trip_distance > 9.28 VÀ zone_JFK Airport > 0.50 VÀ trip_distance <= 11.86 VÀ trip_distance > 10.97,69.49,700
+G25,trip_distance > 9.28 VÀ zone_JFK Airport > 0.50 VÀ trip_distance > 11.86 VÀ dow > 2.50 VÀ dow <= 3.50,69.77,1058
+G26,trip_distance > 9.28 VÀ zone_JFK Airport > 0.50 VÀ trip_distance > 11.86 VÀ dow <= 2.50 VÀ trip_distance <= 14.20,69.96,969
+G27,trip_distance > 9.28 VÀ zone_JFK Airport > 0.50 VÀ trip_distance <= 11.86 VÀ trip_distance <= 10.97,69.99,825
+G28,trip_distance > 9.28 VÀ zone_JFK Airport > 0.50 VÀ trip_distance > 11.86 VÀ dow > 2.50 VÀ dow > 3.50,70.0,3285
+G29,trip_distance > 9.28 VÀ zone_JFK Airport > 0.50 VÀ trip_distance > 11.86 VÀ dow <= 2.50 VÀ trip_distance > 14.20,70.23,2302

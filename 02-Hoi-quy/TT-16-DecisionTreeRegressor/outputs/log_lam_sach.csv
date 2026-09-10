@@ -1,0 +1,5 @@
+buoc,so_dong_con_lai,so_dong_bi_loai
+Ban đầu,200000,0
+Loại fare_amount <= 0,198481,1519
+Loại trip_distance <=0 hoặc > 100 miles,195482,2999
+Loại passenger_count == 0,193983,1499
