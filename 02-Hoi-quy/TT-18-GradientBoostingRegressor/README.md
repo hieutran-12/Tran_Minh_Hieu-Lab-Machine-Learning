@@ -1,8 +1,4 @@
-# TT-18 — Gradient Boosting Regressor: Thẩm định giá nhà tự động (AVM)
 
-Bài nộp cho **TT-18** (Buổi 13 — Regression Nâng Cao). Mô hình `GradientBoostingRegressor`
-huấn luyện trên bộ **Ames Housing** để dự đoán `SalePrice`, kèm khoảng dự báo 10–90%
-(hồi quy phân vị) và cơ chế human-in-the-loop cho hệ thống AVM.
 
 ## 1. Cách chạy
 
@@ -26,8 +22,8 @@ Median APE, coverage, bảng human-in-the-loop trên terminal.
 
 **b) Chạy từng bước bằng notebook (để xem giải thích + biểu đồ inline):**
 ```bash
-jupyter notebook notebooks/01_data_cleaning.ipynb   # bước 1–6: làm sạch, encode, kiểm tra skew
-jupyter notebook notebooks/02_gbr_model.ipynb       # bước 7–13: baseline, GBR, khoảng giá, APE, HITL
+jupyter notebook notebooks/01_data_cleaning.ipynb   
+jupyter notebook notebooks/02_gbr_model.ipynb      
 ```
 
 ## 2. Cấu trúc thư mục
