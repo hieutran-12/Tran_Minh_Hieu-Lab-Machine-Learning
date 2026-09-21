@@ -1,0 +1,47 @@
+{
+  "K": 21,
+  "weights": "distance",
+  "metric": "manhattan",
+  "he_so_vi_tri": 5.0,
+  "rmse_cv_train": 0.4938,
+  "rmse_test": 0.4785,
+  "r2_test": 0.8269,
+  "vi_du_can_tuong_tu": [
+    {
+      "Căn": 4194,
+      "Giá thực": 4.364,
+      "KNN ước tính": 2.738,
+      "Giá các căn tương tự": [
+        2.57,
+        2.47,
+        2.3,
+        2.44,
+        3.8
+      ]
+    },
+    {
+      "Căn": 9655,
+      "Giá thực": 1.696,
+      "KNN ước tính": 2.058,
+      "Giá các căn tương tự": [
+        2.21,
+        2.49,
+        1.36,
+        2.4,
+        2.42
+      ]
+    },
+    {
+      "Căn": 15376,
+      "Giá thực": 2.558,
+      "KNN ước tính": 2.593,
+      "Giá các căn tương tự": [
+        1.91,
+        2.64,
+        2.79,
+        2.07,
+        2.6
+      ]
+    }
+  ]
+}
