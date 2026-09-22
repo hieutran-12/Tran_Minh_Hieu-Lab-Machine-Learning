@@ -125,16 +125,51 @@ Random Forest cho RMSE tốt hơn nhưng **không làm được điều này** (
 
 <!-- KET-QUA:BEGIN --> <!-- Tự sinh bởi src/train.py — đừng sửa tay -->
 
-> Bảng dưới đây là **mức tham chiếu kỳ vọng**. Chạy `python src/train.py` để thay bằng
-> số liệu thật đo trên máy bạn (script tự ghi đè đúng khối này).
+> Sinh tự động lúc 2026-09-22 17:57
 
-| Mô hình | RMSE test | R² test | Dự đoán 1 căn | Giải thích được? |
-|---|---|---|---|---|
-| Dummy (giá trung bình) | ~1,15 | ~0,00 | tức thì | — |
-| Linear Regression (TT-11) | ~0,72 | ~0,60 | tức thì | Có — hệ số từng đặc trưng |
-| KNN K=5 — KHÔNG chuẩn hoá | ~1,05 | ~0,15 | chậm | Có |
-| **KNN K≈10, distance (TT-21)** | **~0,61** | **~0,70–0,75** | chậm | **Có — chỉ ra ĐÚNG các căn tương tự** |
-| Random Forest | ~0,50 | ~0,81 | trung bình | Khó — chỉ có feature importance |
+
+**Baseline & chuẩn hoá**
+
+| Mô hình                   |   RMSE_train |   RMSE_test |   R2_test |   Thời gian train (s) |   Dự đoán 1 căn (ms) |
+|:--------------------------|-------------:|------------:|----------:|----------------------:|---------------------:|
+| Dummy (giá TB)            |       1.1558 |      1.15   |   -0.0001 |                0.0006 |               0.0323 |
+| Linear Regression (TT-11) |       0.6712 |      0.6789 |    0.6515 |                0.0068 |               0.6742 |
+| KNN K=5 — KHÔNG chuẩn hoá |       0.8536 |      1.0658 |    0.141  |                0.0141 |              31.5433 |
+| KNN K=5 — CÓ chuẩn hoá    |       0.4902 |      0.5909 |    0.736  |                0.0238 |              31.4249 |
+
+**Weights × metric**
+
+| Mô hình              |   RMSE_train |   RMSE_test |   R2_test |   Thời gian train (s) |   Dự đoán 1 căn (ms) |
+|:---------------------|-------------:|------------:|----------:|----------------------:|---------------------:|
+| uniform · euclidean  |       0.5632 |      0.5774 |    0.7478 |                0.0229 |              31.7194 |
+| uniform · manhattan  |       0.5425 |      0.5532 |    0.7686 |                0.033  |              36.0244 |
+| distance · euclidean |       0      |      0.5728 |    0.7518 |                0.019  |              33.0262 |
+| distance · manhattan |       0      |      0.5488 |    0.7722 |                0.0221 |              31.455  |
+
+**Trọng số vị trí**
+
+|   Hệ số Lat/Lon |   RMSE_val |   RMSE_test |   R2_test |
+|----------------:|-----------:|------------:|----------:|
+|               1 |     0.5549 |      0.5541 |    0.7678 |
+|               2 |     0.5227 |      0.5209 |    0.7948 |
+|               3 |     0.5019 |      0.5044 |    0.8076 |
+|               5 |     0.4808 |      0.4847 |    0.8223 |
+
+**So sánh 3 thuật toán**
+
+| Mô hình                   |   RMSE_train |   RMSE_test |   R2_test |   Thời gian train (s) |   Dự đoán 1 căn (ms) | Giải thích được?                         |
+|:--------------------------|-------------:|------------:|----------:|----------------------:|---------------------:|:-----------------------------------------|
+| Linear Regression (TT-11) |       0.6712 |      0.6789 |    0.6515 |                0.0066 |               0.9256 | Có — hệ số từng đặc trưng                |
+| KNN Regressor (TT-21)     |       0      |      0.4785 |    0.8269 |                0.0167 |              33.7767 | Có — chỉ ra ĐÚNG các căn tương tự        |
+| Random Forest             |       0.1844 |      0.4957 |    0.8142 |                5.0812 |              53.0549 | Khó — 200 cây, chỉ có feature importance |
+
+**Thời gian dự đoán theo kích thước dữ liệu**
+
+| Bội số dữ liệu   |   Số dòng train |   Dự đoán 1 căn (ms) |   Dự đoán 100 căn (ms) |
+|:-----------------|----------------:|---------------------:|-----------------------:|
+| 1×               |           16396 |              32.4586 |                32.1522 |
+| 5×               |           81980 |              31.3911 |                61.5153 |
+| 10×              |          163960 |              34.6982 |                46.4568 |
 
 <!-- KET-QUA:END -->
 
