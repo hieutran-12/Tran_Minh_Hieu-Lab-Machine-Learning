@@ -1,0 +1,18 @@
+# Data (khách hàng tự tải từ Kaggle, không commit)
+data/*.csv
+
+# Model artifacts & reports sinh ra khi chạy pipeline
+models/*.keras
+reports/*.png
+reports/*.json
+reports/*.md
+!reports/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
