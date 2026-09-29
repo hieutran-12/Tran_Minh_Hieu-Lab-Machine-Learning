@@ -1,0 +1,4 @@
+Mô hình,AUC (val),Recall@0.5 (val),Specificity@0.5 (val),Accuracy@0.5 (val),Số epoch chạy
+CNN từ đầu (baseline),0.9813,0.7336,1.0,0.8003,17
+Transfer Learning (đóng băng),0.9898,0.8685,0.9845,0.8975,10
+Fine-tuning (lr=1e-5),0.9931,0.8962,0.9845,0.9183,11
