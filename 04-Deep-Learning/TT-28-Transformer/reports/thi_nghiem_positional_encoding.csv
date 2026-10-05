@@ -1,0 +1,3 @@
+cấu hình,accuracy,f1_macro,accuracy khi ĐẢO thứ tự từ,số epoch,train (s)
+Có positional encoding,0.9197368421052632,0.9192008144836336,0.9155263157894736,3,677.2
+BỎ positional encoding,0.9197368421052632,0.919532054002985,0.9197368421052632,3,875.3

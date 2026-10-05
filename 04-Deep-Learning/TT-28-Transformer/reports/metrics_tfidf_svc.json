@@ -1,0 +1,10 @@
+{
+  "ten": "TF-IDF + LinearSVC",
+  "train_time_s": 255.85343789984472,
+  "params": 1200004,
+  "predict_ms": 12.947755998466164,
+  "device": "cpu",
+  "epochs": null,
+  "accuracy": 0.9257894736842105,
+  "f1_macro": 0.9256196569490278
+}

@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+joblib
+datasets>=2.14
+tensorflow>=2.16        # Keras 3: Transformer tự xây + BiLSTM
+torch>=2.2              # fine-tune DistilBERT
+transformers>=4.40,<5
+notebook
+ipykernel
