@@ -1,0 +1,3 @@
+Baseline,Accuracy,Macro-F1
+DummyClassifier (lớp phổ biến nhất),0.05297397769516728,0.005030891438658429
+TF-IDF + Naive Bayes,0.6695432819968136,0.6465327826030316

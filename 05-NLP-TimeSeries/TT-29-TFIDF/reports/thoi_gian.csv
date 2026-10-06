@@ -1,0 +1,6 @@
+Chỉ số,Giá trị
+Train toàn bộ pipeline (giây),21.53
+"Dự đoán 1 ticket — trung bình (ms, 300 ticket)",3.333
+Dự đoán 1 ticket — trung vị (ms),3.07
+Dự đoán 1 ticket — p95 (ms),6.226
+Đạt yêu cầu < 5 ms (trung bình),ĐẠT

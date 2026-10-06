@@ -1,0 +1,9 @@
+scikit-learn>=1.2
+numpy
+pandas
+matplotlib
+joblib
+# Chạy notebook:
+jupyter
+# Tuỳ chọn — chỉ khi dùng dữ liệu tiếng Việt thật:
+# underthesea

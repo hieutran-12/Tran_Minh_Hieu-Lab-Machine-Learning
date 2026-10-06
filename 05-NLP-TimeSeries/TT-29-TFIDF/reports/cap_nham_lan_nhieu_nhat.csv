@@ -1,0 +1,11 @@
+Thực tế,Bị nhầm thành,Số ca,Tỉ lệ nhầm
+talk.politics.misc,talk.politics.guns,80,0.25806451612903225
+talk.religion.misc,soc.religion.christian,52,0.20717131474103587
+comp.windows.x,comp.graphics,51,0.1291139240506329
+talk.religion.misc,alt.atheism,41,0.16334661354581673
+alt.atheism,soc.religion.christian,39,0.12225705329153605
+comp.os.ms-windows.misc,comp.sys.ibm.pc.hardware,37,0.09390862944162437
+comp.sys.ibm.pc.hardware,comp.os.ms-windows.misc,36,0.09183673469387756
+comp.sys.ibm.pc.hardware,sci.electronics,34,0.08673469387755102
+comp.sys.ibm.pc.hardware,comp.sys.mac.hardware,32,0.08163265306122448
+rec.motorcycles,rec.autos,27,0.0678391959798995
